@@ -1,0 +1,11 @@
+/target
+**/*.rs.bk
+Cargo.lock
+bin/
+pkg/
+wasm-pack.log
+wow/
+.idea/
+.vscode/
+*.yml
+*.txt
