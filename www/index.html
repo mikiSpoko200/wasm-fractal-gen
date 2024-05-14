@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>Hello wasm-pack!</title>
+</head>
+<body>
+<div class="panes">
+  <div class="leftpane">
+    <h1><span class="blue">&lt;</span>Fractal<span class="blue">&gt;</span> <span class="yellow">Explorer</span></h1>
+    <form id="axes">
+      <label for="real axis range:">Real axis range:</label><br><br>
+      from
+      <input type="text" id="rstart" name="start" value="-3">
+      to
+      <input type="text" id="rend" name="end" value="3"><br><br>
+      <label for="imag axis range:">Imaginary axis range:</label><br><br>
+      from
+      <input type="text" id="istart" name="start" value="-3">
+      to
+      <input type="text" id="iend" name="end" value="3"><br><br>
+      <input type="submit" value="Render!">
+    </form>
+    <div class="slideshow-header">
+      <h2>Slideshow</h2>
+    </div>
+    <div class="slideshow-controls">
+      <button id="startBtn">Start</button>
+      <button id="endBtn" disabled>End</button>
+    </div>
+  </div>
+  <div class="sep"></div>
+  <div class="rightpane">
+    <canvas id="fractal-canvas"></canvas>
+    <script src="./bootstrap.js"></script>
+  </div>
+</div>
+</body>
+</html>
