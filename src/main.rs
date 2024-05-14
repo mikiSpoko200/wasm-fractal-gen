@@ -4,7 +4,7 @@ mod image;
 mod complex;
 mod fractals;
 
-use fractals::{FractalGenerator};
+use fractals::FractalGenerator;
 
 // region POINTS
 const POINTS: [(f64, f64, f64, f64); 64] = [

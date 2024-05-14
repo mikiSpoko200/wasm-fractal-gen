@@ -111,16 +111,19 @@ impl Image {
         }
     }
 
+    #[allow(unused)]
     /// Setter for the red bit of pixel with specified index.
     pub fn set_red(&mut self, index: u64, value: u8) {
         self.buffer[index as usize].red = value;
     }
 
+    #[allow(unused)]
     /// Setter for the green bit of pixel with specified index.
     pub fn set_green(&mut self, index: u64, value: u8) {
         self.buffer[index as usize].green = value;
     }
 
+    #[allow(unused)]
     /// Setter for the blue bit of pixel with specified index.
     pub fn set_blue(&mut self, index: u64, value: u8) {
         self.buffer[index as usize].blue = value;
