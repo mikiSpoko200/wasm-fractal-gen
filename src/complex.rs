@@ -16,6 +16,7 @@ impl Complex {
         Self { real: self.real, imag: -self.imag }
     }
 
+    #[allow(unused)]
     /// Calculate complex argument of self.
     pub fn arg(&self) -> f64 {
         f64::atan(self.imag / self.real)

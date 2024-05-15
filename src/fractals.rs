@@ -78,7 +78,7 @@ impl FractalGenerator {
     }
 
     pub fn save_to_file(&self, path: &str) {
-        self.image_buffer.save(path);
+        self.image_buffer.save(path).expect("saving to file failed");
     }
 }
 
